@@ -40,7 +40,7 @@ export default function ViewAnalysisModal ({ onClose, analysis }: ViewAnalysisMo
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
-            <div className="bg-white rounded-2xl shadow-2xl w-[80%] md:w-[60%] h-[80%] overflow-y-auto  mx-4 p-6 relative animate-modal">
+            <div className="bg-white rounded-2xl shadow-2xl w-[95%] md:w-[60%] h-[80%] overflow-y-auto  mx-4 p-6 relative animate-modal">
 
                 {/* close */}
                 {/* close */}
