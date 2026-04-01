@@ -4,7 +4,7 @@ import { useAuthStore } from "../store/AuthStore";
 
 function AuthListener() {
     const { user, isSignedIn, isLoaded } = useUser();
-    const { createProfile, fetchProfile, profile, loading } = useAuthStore();
+    const { createProfile, fetchProfile, profile } = useAuthStore();
     
     // Use a Ref to track if we've already attempted a sync this session
     const hasSynced = useRef(false);

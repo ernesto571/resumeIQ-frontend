@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/DashboardPageComponents/Sidebar";
 import Topbar from "../../components/DashboardPageComponents/Topbar";
 import UploadModal from "../../components/DashboardPageComponents/UploadModal";
@@ -12,9 +11,8 @@ const PRIMARY_LIGHT = "#fdf2f8";
 const PRIMARY_HOVER = "#831440";
 
 export default function ResumePage() {
-    const { resumes, fetchResumes, deleteResume, isLoading } = useResumeStore();
+    const { resumes, fetchResumes, isLoading } = useResumeStore();
     const [showModal, setShowModal] = useState(false);
-    const navigate = useNavigate();
 
     useEffect(() => { fetchResumes(); }, []);
 

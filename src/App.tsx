@@ -5,7 +5,7 @@ import { useAuthStore } from "./store/AuthStore";
 import LandingPage from "./pages/LandingPage";
 import Navbar from "./components/LandingPageComponents/Navbar";
 import { Loader } from "lucide-react";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import AuthListener from "./hooks/AuthListener";
 import Overview from "./pages/Dashboard/Overview";
 import Resume from "./pages/Dashboard/Resume";
