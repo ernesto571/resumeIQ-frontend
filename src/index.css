@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  right: auto;
+  width: 0;
+  height: 2px;
+  background-color: #9D174D;
+  transition: width 300ms ease-in-out, left 300ms ease-in-out, right 300ms ease-in-out;
+}
+
+/* Hover: grow from left → right */
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+/* Unhover: shrink out to the right */
+.nav-link:not(:hover)::after {
+  width: 0;
+  left: auto;
+  right: 0;
+}
+
+/* Active: always underlined, overrides unhover */
+.nav-link.active::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+.main {
+  grid-column: span 6;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  height: 100%;
+}
+
+.sidebar {
+  grid-column: span 1;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
