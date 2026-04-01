@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, X } from "lucide-react";
+import { Mail, Phone, X } from "lucide-react";
 import { useLocation } from "react-router-dom";
 import { sidebarLinks2 } from "../../constants";
 
