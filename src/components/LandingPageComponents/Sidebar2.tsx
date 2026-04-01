@@ -56,16 +56,10 @@ export default function Sidebar2 ({ isOpen, onClose }: SidebarProps){
 
             {/* contact info */}
             <div className="mt-4 font-extralight ">
-                <h3 className="text-[1.5rem]">Contact Info</h3>
- 
-                <span className="flex mt-5 text-[0.9rem] gap-2 items-center">
-                    <MapPin size={20}  className="text-[#9D174D] "/>
-                    <p>71–75 Shelton Street, Covent Garden, London WC2H 9JQ</p>
-                </span>
 
                 <span className="flex mt-6 text-[0.9rem] gap-2 items-center">
                     <Mail size={20} className="text-[#9D174D] "/>
-                    <p>homeId@gmail.com</p>
+                    <p>resumeIQ@gmail.com</p>
                 </span>
 
                 <span className="flex mt-6 text-[0.9rem] gap-2 items-center">

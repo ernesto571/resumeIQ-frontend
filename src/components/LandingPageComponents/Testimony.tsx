@@ -26,7 +26,7 @@ export default function Testimony(){
         <section ref={ref} className="pt-10" id="reviews">
             <main className="relative ">
                 <div className="relative min-h-screen w-full">
-                    <img src="https://res.cloudinary.com/dsljbxkfy/image/upload/v1774733372/bg-2_gdpdkx.jpg" alt="bg" className="h-[200vh] md:h-screen w-full" />
+                    <img src="https://res.cloudinary.com/dsljbxkfy/image/upload/v1774733372/bg-2_gdpdkx.jpg" alt="bg" className="h-[160vh] md:h-screen w-full" />
                 </div>
 
                 <div className="absolute inset-0 w-[90%] lg:w-[85%] mx-auto pt-16">
